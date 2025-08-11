@@ -82,7 +82,7 @@ p {
 .asignatura.aprobado {
     background-color: #84b6f4; /* Color celeste pastel para aprobadas */
     color: white;
-    text-decoration: line-through;
+    text-decoration: line-through; /* Esto tacha el nombre de la asignatura */
     opacity: 1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -98,7 +98,7 @@ p {
     font-size: 0.9em;
     font-weight: normal;
     color: #ffffff;
-    text-decoration: none; /* Quitar el tachado del promedio */
+    text-decoration: none; /* Esto evita que el promedio se tache */
 }
 
 /* Estilos de los modales */
