@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     asignaturaDiv.classList.add('aprobado');
                     const promedio = datosMalla[asignatura.nombre];
                     // Se inserta el promedio dentro de un span para controlarlo con CSS
-                    asignaturaDiv.innerHTML = `${asignatura.nombre} <span class="promedio-texto">(${promedio})</span>`;
+                    asignaturaDiv.innerHTML = `<span class="nombre-asignatura">${asignatura.nombre}</span> <span class="promedio-texto">(${promedio})</span>`;
                 } else {
                     asignaturaDiv.textContent = asignatura.nombre;
                 }
@@ -249,6 +249,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Inicialización ---
 
+    // Dibuja la malla por primera vez al cargar la página
+    dibujarMalla();
+});
     // Dibuja la malla por primera vez al cargar la página
     dibujarMalla();
 });
