@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular de Enfermería</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
 
+    <header>
+        <h1>Malla Curricular de Enfermería</h1>
+        <p>Haz clic en una asignatura para marcarla como aprobada.</p>
+    </header>
+
+    <main class="malla-container">
+        </main>
+
+    <div id="modal-promedio" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Ingresa el Promedio</h2>
+            <p>Asignatura: <span id="nombre-asignatura"></span></p>
+            <input type="number" id="input-promedio" placeholder="Ej: 7.0" step="0.1" min="1.0" max="7.0">
+            <button id="guardar-promedio">Guardar</button>
+        </div>
+    </div>
+
+    <div id="modal-requisitos" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Asignatura Bloqueada</h2>
+            <p>No puedes aprobar esta asignatura. Primero debes completar los siguientes requisitos:</p>
+            <ul id="lista-requisitos"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
