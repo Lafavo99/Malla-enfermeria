@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Definición de la malla curricular con todos los datos
+    // Definición de la malla curricular con todos los datos y requisitos.
     const malla = {
         'SEMESTRE 1': [
             { nombre: 'Química General y Orgánica', requisitos: [] },
@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (estaAprobado(asignatura.nombre)) {
                     asignaturaDiv.classList.add('aprobado');
                     const promedio = datosMalla[asignatura.nombre];
+                    // Se inserta el promedio dentro de un span para controlarlo con CSS
                     asignaturaDiv.innerHTML = `${asignatura.nombre} <span class="promedio-texto">(${promedio})</span>`;
                 } else {
                     asignaturaDiv.textContent = asignatura.nombre;
